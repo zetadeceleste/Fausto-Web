@@ -1,0 +1,25 @@
+body {
+    margin: 30px 20px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#header>img {
+    width: 400px;
+    height: 170px;
+}
+
+#header>.menu {
+    display: flex;
+    margin: 10px 0px;
+    justify-content: center;
+}
+
+.menu>p {
+    margin: 0px;
+    width: 130px;
+}
