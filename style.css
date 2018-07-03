@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+/*---------------HEADER-------------*/
+
+header img {
+    width: 25%;
+    padding: 2% 40%;
+}
+
+/*---------------NAV-------------*/
 .nav {
     display: flex;
     justify-content: center;
@@ -10,12 +18,11 @@
 
 .nav-element {
     margin: 5px 10px 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
 }
 
-header img {
-    width: 25%;
-    padding: 2% 40%;
-}
+
 
 .parque img {
     width: 100%;
@@ -26,7 +33,7 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1%;
-    padding: 0 8%;
+    padding: 1% 8%;
 }
 
 .article-1 {
@@ -38,7 +45,15 @@ header img {
 
 .article-2 {
     grid-column: 3/ span 1;
-    grid-row: 1/span 1
+    grid-row: 1/span 1;
+    background-color: #E9E9E9;
+}
+
+.article-2 h2{
+    color: #57B3D5;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+
 }
 
 .article-3 {
@@ -51,6 +66,7 @@ header img {
 .article-4 {
     grid-column: 2/ span 1;
     grid-row: 2/span 1;
+    background-color: #E9E9E9;
 }
 
 .article-5 {
@@ -63,21 +79,33 @@ header img {
 .article-6 {
     grid-column: 1/ span 1;
     grid-row: 3/span 1;
+    background-color: #E9E9E9;
 }
 
 .article-7 {
     grid-column: 2/ span 1;
     grid-row: 3/span 1;
+    padding: 0 !important;
+}
+
+.article-7 iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .article-8 {
     grid-column: 3/ span 1;
     grid-row: 3/span 1;
+    background-color: #E9E9E9;
 }
 
 article {
     text-align: center;
     padding: 10% 20%;
+}
+
+article p{
+    color: #3D3D3D;
 }
 
 .bio {
@@ -103,7 +131,7 @@ article {
 
 .contacto {
     padding: 0 8%;
-    margin: 20px 0px;
+    width: 84%;
 }
 
 .contacto-gpo-elements {
@@ -121,5 +149,5 @@ article {
 }
 
 .contacto-element p {
-    margin-left: 10px;
+    margin-left: 1vw;
 }
