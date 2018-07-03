@@ -1,21 +1,27 @@
-*{
-    margin:0;
+* {
+    margin: 0;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
 
+.nav-element {
+    margin: 5px 10px 20px;
+}
 
-
-
-header img{
-    width: 20%;
+header img {
+    width: 25%;
     padding: 2% 40%;
 }
 
-.parque img{
+.parque img {
     width: 100%;
 }
 
-.parque{
+.parque {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -23,78 +29,97 @@ header img{
     padding: 0 8%;
 }
 
-.article-1{
+.article-1 {
     grid-column: 1/ span 2;
     grid-row: 1/span 1;
     background-image: url(img/1.jpg);
     background-size: cover;
 }
 
-.article-2{
+.article-2 {
     grid-column: 3/ span 1;
     grid-row: 1/span 1
-    
 }
-.article-3{
+
+.article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/span 1;
     background-image: url(img/2.jpg);
     background-size: cover;
-    
 }
-.article-4{
+
+.article-4 {
     grid-column: 2/ span 1;
     grid-row: 2/span 1;
-    
 }
-.article-5{
+
+.article-5 {
     grid-column: 3/ span 1;
     grid-row: 2/span 1;
     background-image: url(img/3.jpg);
     background-size: cover;
-    
-}
-.article-6{
-    grid-column: 1/ span 1;
-    grid-row: 3/span 1;
-    
-}
-.article-7{
-    grid-column: 2/ span 1;
-    grid-row: 3/span 1;
-    
-}
-.article-8{
-    grid-column: 3/ span 1;
-    grid-row: 3/span 1;
-    
 }
 
-article{
+.article-6 {
+    grid-column: 1/ span 1;
+    grid-row: 3/span 1;
+}
+
+.article-7 {
+    grid-column: 2/ span 1;
+    grid-row: 3/span 1;
+}
+
+.article-8 {
+    grid-column: 3/ span 1;
+    grid-row: 3/span 1;
+}
+
+article {
     text-align: center;
     padding: 10% 20%;
 }
 
-.bio{
-    display:grid;
+.bio {
+    display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 0 8%;
 }
 
-.bio img{
+.bio img {
     grid-column: 1 / span 1;
     width: 100%;
 }
 
-.bio div{
+.bio div {
     grid-column: 2/ span 2;
 }
 
-.catalogo{
+.catalogo {
     background-image: url(img/obra.jpeg);
     background-size: cover;
     padding: 0 8%;
 }
-.contacto{
+
+.contacto {
     padding: 0 8%;
+    margin: 20px 0px;
+}
+
+.contacto-gpo-elements {
+    margin: 25px 0px;
+}
+
+.contacto-element img {
+    width: 3%;
+}
+
+.contacto-element {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.contacto-element p {
+    margin-left: 10px;
 }
