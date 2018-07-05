@@ -61,7 +61,7 @@ article p {
 .article-1 {
     grid-column: 1/ span 2;
     grid-row: 1/ span 1;
-    background-image: url('img/1.jpg');
+    background-image: url('../img/1.jpg');
     background-size: cover;
 }
 
@@ -81,7 +81,7 @@ article p {
 .article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('img/2.jpg');
+    background-image: url('../img/2.jpg');
     background-size: cover;
 }
 
@@ -94,7 +94,7 @@ article p {
 .article-5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('img/3.jpg');
+    background-image: url('../img/3.jpg');
     background-size: cover;
 }
 
@@ -159,7 +159,7 @@ article p {
 }
 
 .catalogue-section {
-    background-image: url('img/obra.jpeg');
+    background-image: url('../img/obra.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
