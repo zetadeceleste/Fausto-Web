@@ -22,6 +22,11 @@ header img{
     justify-self: center;
 }
 
+.articleText {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(65, 65, 65);
+}
+
 .article:hover{
     transform: scale(1.03);
     cursor: pointer;
@@ -79,6 +84,7 @@ header img{
     justify-self: end;
     color: grey;
     padding: 10% 10%;
+    font-family: 'Raleway', sans-serif;
 }
 
 #close:hover{

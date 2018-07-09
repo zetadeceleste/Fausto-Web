@@ -28,33 +28,51 @@ function loadArticles(){
         articleElement.addEventListener("click",function(){ 
             fondo.style.display = "block";
             articleElement.style.transform = "unset";
-            // articleElement.style.visibility = "hidden";
-            let detailsName = document.createElement("H2");
-            let textNodeName = document.createTextNode(article.name);
-            detailsName.appendChild(textNodeName);
-            let textNodePrecio = document.createTextNode("Precio: " + article.precio);
-            let detailsPrecio = document.createElement("P");
-            detailsPrecio.appendChild(textNodePrecio);
-            let textNodeTamanio = document.createTextNode("Tamaño: " + article.tamanio);
-            let detailsTamanio = document.createElement("P");
-            detailsTamanio.appendChild(textNodeTamanio);
-            let detailsInfo = document.createElement("DIV");
-            detailsInfo.className = "details-info";
-            detailsInfo.appendChild(detailsTamanio);
-            detailsInfo.appendChild(detailsPrecio);    
-            articleDetails.appendChild(detailsName);
-            let detailsImg = document.createElement("IMG");
-            detailsImg.src=article.img;
-            articleDetails.appendChild(detailsImg);
-            articleDetails.appendChild(detailsInfo);
-            let textNodeClose = document.createTextNode("X");
-            let detailsClose = document.createElement("P");
-            detailsClose.appendChild(textNodeClose);
-            detailsClose.id = "close";
-            articleDetails.appendChild(detailsClose);
-            detailsClose.addEventListener("click", close);
+            createArticleName(article);    
+            createArticleInfo(article);
+            createArticleImg(article);
+            createArticleCloseB();
         });
     }
+}
+
+function createArticleCloseB(){
+    let textNodeClose = document.createTextNode("X");
+    let detailsClose = document.createElement("P");
+    detailsClose.appendChild(textNodeClose);
+    detailsClose.id = "close";
+    articleDetails.appendChild(detailsClose);
+    detailsClose.addEventListener("click", close);
+}
+
+function createArticleImg(article){
+    let detailsImg = document.createElement("IMG");
+    detailsImg.src=article.img;
+    articleDetails.appendChild(detailsImg);
+}
+
+function createArticleInfo(article){
+    let textNodePrecio = document.createTextNode("Precio: " + article.precio);
+    let detailsPrecio = document.createElement("P");
+    detailsPrecio.className = "articleText";
+    detailsPrecio.appendChild(textNodePrecio);
+    let textNodeTamanio = document.createTextNode("Tamaño: " + article.tamanio);
+    let detailsTamanio = document.createElement("P");
+    detailsTamanio.className = "articleText";
+    detailsTamanio.appendChild(textNodeTamanio);
+    let detailsInfo = document.createElement("DIV");
+    detailsInfo.className = "details-info";
+    detailsInfo.appendChild(detailsTamanio);
+    detailsInfo.appendChild(detailsPrecio);
+    articleDetails.appendChild(detailsInfo);
+}
+
+function createArticleName(article){
+    let detailsName = document.createElement("H2");
+    detailsName.className = "articleText";
+    let textNodeName = document.createTextNode(article.name);
+    detailsName.appendChild(textNodeName);
+    articleDetails.appendChild(detailsName);
 }
 
 function close(){
@@ -67,6 +85,7 @@ function close(){
     fondo.style.display = "none";
     loadArticles();
 }
+
 
 
 
