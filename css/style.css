@@ -30,9 +30,9 @@ header img {
 }
 
 .nav-element {
-    margin: 1% 1% 3%;
-    font-weight: 700;
-    font-size: 1.2rem;
+    margin: 2% 1% 4%;
+    font-weight: 500;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -51,7 +51,6 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
-    row-gap: 20px;
 }
 
 article:nth-child(2) {
@@ -130,6 +129,8 @@ article p {
     background-color: #E9E9E9;
 }
 
+/* ARTIST */
+
 .artist-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -141,6 +142,7 @@ article p {
     grid-column: 1 / span 1;
     background-image: url('../img/fausto.jpeg');
     background-size: cover;
+    background-position: center;
 }
 
 .artist-bio {
