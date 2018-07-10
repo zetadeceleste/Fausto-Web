@@ -34,6 +34,7 @@ header img {
     font-weight: 500;
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
+    color: rgb(49, 49, 49);
 }
 
 /* SECTIONS */
@@ -49,7 +50,7 @@ header img {
 .park-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
     grid-gap: 20px;
 }
 
@@ -82,9 +83,62 @@ article p {
     background-color: #E9E9E9;
 }
 
+
+
 .article-2 h2 {
     color: #57B3D5;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 35%;
 }
+@keyframes title{
+    0%{
+        opacity: 0;
+        margin-top: 35%;
+    }
+    40%{
+        opacity:1;
+        margin-top: 35%;
+    }
+    70%{
+        opacity: 1;
+        margin-top: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.article-2 p {
+    animation-name: text;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    height: 0;
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    50%{
+        opacity: 0;
+        height: auto;
+    }
+    100%{
+        opacity: 1;
+        height: auto;
+    }
+}
+
+
+
+
+
 
 .article-3 {
     grid-column: 1/ span 1;
@@ -99,6 +153,26 @@ article p {
     background-color: #E9E9E9;
 }
 
+.article-4 p {
+    opacity: 0;
+}
+
+.article-4-animation{
+    animation-name: article-4-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes article-4-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .article-5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
@@ -110,6 +184,26 @@ article p {
     grid-column: 1/ span 1;
     grid-row: 3/ span 1;
     background-color: #E9E9E9;
+}
+
+.article-6 p {
+    opacity: 0;
+}
+
+.article-6-animation{
+    animation-name: article-6-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes article-6-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .article-7 {
@@ -127,6 +221,29 @@ article p {
     grid-column: 3/ span 1;
     grid-row: 3/ span 1;
     background-color: #E9E9E9;
+}
+
+.article-8 p {
+    opacity: 0;
+}
+
+.article-8-animation{
+    animation-name: article-8-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes article-8-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* ARTIST */
