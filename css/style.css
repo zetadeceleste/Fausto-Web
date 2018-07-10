@@ -235,8 +235,32 @@ article p {
 
 /* FOOTER */
 
-.footer {
-    background-color: #000000;
+.footer-up {
+    background-color: #1c1e37;
+    display: flex;
+    flex-flow: row-reverse;
     color: #ffffff;
     padding: 1% 8%;
+}
+
+.footer-pomelo {
+    padding: 2%;
+}
+
+.footer-pomelo img {
+    width: 150px;
+    padding: 10px 0px;
+}
+
+.credit-icons {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2px;
+}
+
+.credit-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
 }
