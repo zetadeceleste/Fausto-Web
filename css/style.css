@@ -85,33 +85,45 @@ article p {
 
 .article-2 h2 {
     color: #57B3D5;
+    /* opacity: 0; */
+    margin-top: 35%;
+}
+
+.article-h2-animation{
     animation-name: article-2-title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    opacity: 0;
+    color: #57B3D5;
+    /* opacity: 0; */
     margin-top: 35%;
+
 }
 
 @keyframes article-2-title {
     0% {
-        opacity: 0;
+        /* opacity: 0; */
         margin-top: 35%;
     }
     40% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 35%;
     }
     70% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 0;
     }
     100% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 0;
     }
 }
 
 .article-2 p {
+    opacity: 0;
+    height: 0;
+}
+
+.article-p-animation{
     animation-name: article-2-p;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -265,50 +277,51 @@ article p {
     background-color: #709FB0;
     text-align: center;
     color: #ffffff;
-    padding: 12%;
+    max-height: 400px;
 }
 
 .artist-bio h2{
-    opacity: 0;
-    margin-top: 15%;
-    height: 0;
+    /* opacity: 0; */
+    margin-top: 20%;
+    /* height: 0; */
 }
 
 .artist-h2-animation{
     animation-name: artist-h2-animation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    opacity: 0;
-    margin-top: 15%;
-    height: 0;
+    /* opacity: 0; */
+    margin-top: 20%;
+    /* height: 0; */
 }
 
 @keyframes artist-h2-animation{
     0% {
-        opacity: 0;
-        margin-top: 15%;
-        height: 0;
+        /* opacity: 0; */
+        margin-top: 20%;
+        /* height: 0; */
     }
     40% {
-        opacity: 1;
-        margin-top: 15%;
-        height: 0;
+        /* opacity: 1; */
+        margin-top: 20%;
+        /* height: 0; */
     }
     70% {
-        opacity: 1;
-        margin-top: 0;
-        height: auto;
+        /* opacity: 1; */
+        margin-top: 10%;
+        /* height: auto; */
     }
     100% {
-        opacity: 1;
-        margin-top: 0;
-        height: auto;
+        /* opacity: 1; */
+        margin-top: 10%;
+        /* height: auto; */
     }
 }
 
 .artist-bio p{
     opacity: 0;
     height: 0;
+    padding: 0 20%;
 }
 
 .artist-p-animation{
@@ -317,6 +330,7 @@ article p {
     animation-fill-mode: forwards;
     opacity: 0;
     height: 0;
+    padding: 0 20%;
 }
 
 
@@ -360,9 +374,9 @@ article p {
 
 .catalogue-article h2 {
     color: #57B3D5;
-    opacity: 0;
+    /* opacity: 0; */
     margin-top: 25%;
-    height: 0;
+    /* height: 0; */
 }
 
 .catalogue-h2-animation{
@@ -370,31 +384,31 @@ article p {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     color: #57B3D5;
-    opacity: 0;
+    /* opacity: 0; */
     margin-top: 25%;
-    height: 0;
+    /* height: 0; */
 }
 
 @keyframes catalogue-h2-animation{
     0% {
-        opacity: 0;
+        /* opacity: 0; */
         margin-top: 25%;
-        height: 0;
+        /* height: 0; */
     }
     40% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 25%;
-        height: 0;
+        /* height: 0; */
     }
     70% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 10%;
-        height: auto;
+        /* height: auto; */
     }
     100% {
-        opacity: 1;
+        /* opacity: 1; */
         margin-top: 10%;
-        height: auto;
+        /* height: auto; */
     }
 }
 
@@ -475,11 +489,14 @@ article p {
     cursor: pointer;
 }
 
+/*--------CONTACT-------*/
+
 .contact-section {
     background-color: #E5E5E5;
     height: 400px;
     margin: 20px 0;
 }
+
 
 .contact-section h2 {
     color: #565656;
@@ -497,9 +514,52 @@ article p {
     display: flex;
     align-items: center;
     margin: 1% 0;
+    opacity: 0;
 }
 
+.contact-element-1-animation{
+    display: flex;
+    align-items: center;
+    margin: 1% 0;
+    opacity: 0;
+    animation-name: contact-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.contact-element-2-animation{
+    display: flex;
+    align-items: center;
+    margin: 1% 0;
+    opacity: 0;
+    animation-name: contact-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.contact-element-3-animation{
+    display: flex;
+    align-items: center;
+    margin: 1% 0;
+    opacity: 0;
+    animation-name: contact-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contact-element-1-animation img, .contact-element-2-animation img,.contact-element-3-animation img {
+    width: 3%;
+}
 .contact-element p {
+    margin-left: 1%;
+}
+.contact-element-1-animation p, .contact-element-2-animation p,.contact-element-3-animation p {
     margin-left: 1%;
 }
 
