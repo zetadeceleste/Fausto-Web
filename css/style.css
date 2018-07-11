@@ -91,7 +91,7 @@ article p {
 
 .article-h2-animation{
     animation-name: article-2-title;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     color: #57B3D5;
     /* opacity: 0; */
@@ -103,14 +103,6 @@ article p {
     0% {
         /* opacity: 0; */
         margin-top: 35%;
-    }
-    40% {
-        /* opacity: 1; */
-        margin-top: 35%;
-    }
-    70% {
-        /* opacity: 1; */
-        margin-top: 0;
     }
     100% {
         /* opacity: 1; */
@@ -125,7 +117,7 @@ article p {
 
 .article-p-animation{
     animation-name: article-2-p;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
     height: 0;
