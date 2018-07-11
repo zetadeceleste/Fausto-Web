@@ -85,14 +85,14 @@ article p {
 
 .article-2 h2 {
     color: #57B3D5;
-    animation-name: title;
+    animation-name: article-2-title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
     margin-top: 35%;
 }
 
-@keyframes title {
+@keyframes article-2-title {
     0% {
         opacity: 0;
         margin-top: 35%;
@@ -112,14 +112,14 @@ article p {
 }
 
 .article-2 p {
-    animation-name: text;
+    animation-name: article-2-p;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
     height: 0;
 }
 
-@keyframes text {
+@keyframes article-2-p {
     0% {
         opacity: 0;
         height: 0;
@@ -255,6 +255,7 @@ article p {
     background-image: url('../img/fausto.jpeg');
     background-size: cover;
     background-position: center;
+    height: 400px;
 }
 
 .artist-bio {
@@ -265,6 +266,73 @@ article p {
     text-align: center;
     color: #ffffff;
     padding: 12%;
+}
+
+.artist-bio h2{
+    opacity: 0;
+    margin-top: 15%;
+    height: 0;
+}
+
+.artist-h2-animation{
+    animation-name: artist-h2-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-top: 15%;
+    height: 0;
+}
+
+@keyframes artist-h2-animation{
+    0% {
+        opacity: 0;
+        margin-top: 15%;
+        height: 0;
+    }
+    40% {
+        opacity: 1;
+        margin-top: 15%;
+        height: 0;
+    }
+    70% {
+        opacity: 1;
+        margin-top: 0;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+        height: auto;
+    }
+}
+
+.artist-bio p{
+    opacity: 0;
+    height: 0;
+}
+
+.artist-p-animation{
+    animation-name: artist-p-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    height: 0;
+}
+
+
+@keyframes artist-p-animation {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    50% {
+        opacity: 0;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        height: auto;
+    }
 }
 
 /*CATALOGUE*/
@@ -280,10 +348,10 @@ article p {
     -moz-box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .catalogue-article img {
@@ -292,11 +360,74 @@ article p {
 
 .catalogue-article h2 {
     color: #57B3D5;
+    opacity: 0;
+    margin-top: 25%;
+    height: 0;
+}
+
+.catalogue-h2-animation{
+    animation-name: catalogue-h2-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    color: #57B3D5;
+    opacity: 0;
+    margin-top: 25%;
+    height: 0;
+}
+
+@keyframes catalogue-h2-animation{
+    0% {
+        opacity: 0;
+        margin-top: 25%;
+        height: 0;
+    }
+    40% {
+        opacity: 1;
+        margin-top: 25%;
+        height: 0;
+    }
+    70% {
+        opacity: 1;
+        margin-top: 10%;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 10%;
+        height: auto;
+    }
 }
 
 .catalogue-article p {
     color: #595959;
     margin: 0 20px 20px;
+    opacity: 0;
+    height: 0;
+}
+
+.catalogue-p-animation{
+    animation-name: catalogue-p-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    color: #595959;
+    margin: 0 20px 20px;
+    opacity: 0;
+    height: 0;
+}
+
+@keyframes catalogue-p-animation {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    50% {
+        opacity: 0;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        height: auto;
+    }
 }
 
 .catalogue-button {
@@ -305,12 +436,39 @@ article p {
     color: #57B3D5;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .catalogue-section a {
     text-decoration: none;
+    height: 0;
+    opacity: 0;
 }
 
+.catalogue-button-animation{
+    text-decoration: none;
+    height: 0;
+    opacity: 0;
+    animation-name: catalogue-button-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes catalogue-button-animation {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    50% {
+        opacity: 0;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        height: auto;
+    }
+}
+ 
 .catalogue-button:hover {
     background-color: #57B3D5;
     color: #ffffff;
