@@ -5,8 +5,8 @@
 let article4P = document.getElementById("article-4-p");
 let article6P = document.getElementById("article-6-p");
 let article8P = document.getElementById("article-8-p");
-let artistH2 = document.getElementById("artist-h2");
-let artistP = document.getElementById("artist-p");
+let parkH2 = document.getElementById("park-h2");
+let parkP = document.getElementById("park-p");
 let catalogueH2 = document.getElementById("catalogue-h2");
 let catalogueP = document.getElementById("catalogue-p");
 let catalogueButton = document.getElementById("catalogue-button");
@@ -19,7 +19,7 @@ let contactElement3 = document.getElementById("contact-element3");
 //Localización de los elementos
 let coordsArticle4P = article4P.getBoundingClientRect().top;
 let coordsArticle6P = article6P.getBoundingClientRect().top;
-let coordsArtistH2 = artistH2.getBoundingClientRect().top;
+let coordsParkH2 = parkH2.getBoundingClientRect().top;
 let coordsCatalogueH2 = catalogueH2.getBoundingClientRect().top;
 let coordsContactElement = contactElement1.getBoundingClientRect().top;
 
@@ -40,14 +40,9 @@ function article6And8Animation() {
         article6P.className = "article-6-animation";
         article8P.className = "article-8-animation";
     } 
-    if (document.body.scrollTop > coordsArtistH2 - (coordsArticle6P * 0.40) || document.documentElement.scrollTop > coordsArtistH2 - (coordsArticle6P * 0.40)) {
-        artistH2.className = "artist-h2-animation";
-        artistP.className = "artist-p-animation";
-    } 
-    if (document.body.scrollTop > coordsArtistH2 - (coordsCatalogueH2 * 0.10) || document.documentElement.scrollTop > coordsArtistH2 - (coordsCatalogueH2 * 0.10)) {
-        catalogueH2.className = "catalogue-h2-animation";
-        catalogueP.className = "catalogue-p-animation";
-        catalogueButton.className = "catalogue-button-animation";
+    if (document.body.scrollTop > coordsParkH2 - (coordsParkH2 * 0.30) || document.documentElement.scrollTop > coordsParkH2 - (coordsParkH2 * 0.30)) {
+        parkH2.className = "park-h2-animation";
+        parkP.className = "park-p-animation";
     }  
     if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.20) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)){
         contactElement1.className = "contact-element-1-animation";
