@@ -146,7 +146,7 @@ article p {
 .article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/photo_10.jpg');
+    background-image: url('../img/photo_11.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -267,10 +267,10 @@ article p {
 
 .park-img {
     grid-column: 1 / span 1;
-    background-image: url('../img/photo_7.jpg');
-    background-size: 490px;
-    background-position: left;
+    background-image: url('../img/photo_12.jpg');
+    background-position-x: -220px;
     height: 400px;
+    background-position-y: -120px;
 }
 
 .park-bio {
