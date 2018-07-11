@@ -34,6 +34,14 @@ header img {
     font-weight: 500;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
+}
+
+.nav-element:hover{
+    font-weight: 700;
+}
+
+nav a, nav a:visited{
+    text-decoration: none;
     color: rgb(49, 49, 49);
 }
 
