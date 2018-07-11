@@ -18,7 +18,7 @@ h2 {
 
 header img {
     width: 15%;
-    margin: 1% 42.5% 0 42.5%;
+    margin: 2% 42.5% 0 42.5%;
 }
 
 /* NAV */
@@ -30,32 +30,32 @@ header img {
 }
 
 .nav-element {
-    margin: 2% 1% 4%;
+    margin: 2% 1% 3%;
     font-weight: 500;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
 }
 
-.nav-element:hover{
+.nav-element:hover {
     font-weight: 700;
 }
 
-nav a, nav a:visited{
+nav a, nav a:visited {
     text-decoration: none;
     color: rgb(49, 49, 49);
 }
 
-/* SECTIONS */
+/* ARTIST */
 
 .sections-container {
     padding: 0 8%;
 }
 
-.park-section img {
+.artist-section img {
     width: 100%;
 }
 
-.park-section {
+.artist-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
@@ -81,8 +81,9 @@ article p {
 .article-1 {
     grid-column: 1/ span 2;
     grid-row: 1/ span 1;
-    background-image: url('../img/1.jpg');
+    background-image: url('../img/photo_1.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 .article-2 {
@@ -93,27 +94,22 @@ article p {
 
 .article-2 h2 {
     color: #57B3D5;
-    /* opacity: 0; */
     margin-top: 35%;
 }
 
-.article-h2-animation{
+.article-h2-animation {
     animation-name: article-2-title;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     color: #57B3D5;
-    /* opacity: 0; */
     margin-top: 35%;
-
 }
 
 @keyframes article-2-title {
     0% {
-        /* opacity: 0; */
         margin-top: 35%;
     }
     100% {
-        /* opacity: 1; */
         margin-top: 0;
     }
 }
@@ -123,7 +119,7 @@ article p {
     height: 0;
 }
 
-.article-p-animation{
+.article-p-animation {
     animation-name: article-2-p;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -149,8 +145,9 @@ article p {
 .article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/2.jpg');
+    background-image: url('../img/photo_3.jpg');
     background-size: cover;
+    background-position: left;
 }
 
 .article-4 {
@@ -182,8 +179,9 @@ article p {
 .article-5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/3.jpg');
+    background-image: url('../img/photo_8.jpg');
     background-size: cover;
+    background-position-x: -40px;
 }
 
 .article-6 {
@@ -215,12 +213,9 @@ article p {
 .article-7 {
     grid-column: 2/ span 1;
     grid-row: 3/ span 1;
-    padding: 0 !important;
-}
-
-.article-7 iframe {
-    width: 100%;
-    height: 100%;
+    background-image: url('../img/photo_5.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
 
 .article-8 {
@@ -252,9 +247,9 @@ article p {
     }
 }
 
-/* ARTIST */
+/* PARK OF ARTS */
 
-.artist-section {
+.park-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 400px;
@@ -262,15 +257,15 @@ article p {
     margin: 20px 0px;
 }
 
-.artist-img {
+.park-img {
     grid-column: 1 / span 1;
-    background-image: url('../img/fausto.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('../img/photo_7.jpg');
+    background-size: 490px;
+    background-position: left;
     height: 400px;
 }
 
-.artist-bio {
+.park-bio {
     grid-column: 2 / span 2;
     display: flex;
     flex-flow: column;
@@ -280,52 +275,40 @@ article p {
     max-height: 400px;
 }
 
-.artist-bio h2{
-    /* opacity: 0; */
+.park-bio h2 {
     margin-top: 20%;
-    /* height: 0; */
 }
 
-.artist-h2-animation{
-    animation-name: artist-h2-animation;
+.park-h2-animation {
+    animation-name: park-h2-animation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    /* opacity: 0; */
     margin-top: 20%;
-    /* height: 0; */
 }
 
-@keyframes artist-h2-animation{
+@keyframes park-h2-animation {
     0% {
-        /* opacity: 0; */
         margin-top: 20%;
-        /* height: 0; */
     }
     40% {
-        /* opacity: 1; */
         margin-top: 20%;
-        /* height: 0; */
     }
     70% {
-        /* opacity: 1; */
         margin-top: 10%;
-        /* height: auto; */
     }
     100% {
-        /* opacity: 1; */
         margin-top: 10%;
-        /* height: auto; */
     }
 }
 
-.artist-bio p{
+.park-bio p {
     opacity: 0;
     height: 0;
     padding: 0 20%;
 }
 
-.artist-p-animation{
-    animation-name: artist-p-animation;
+.park-p-animation {
+    animation-name: park-p-animation;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -333,8 +316,7 @@ article p {
     padding: 0 20%;
 }
 
-
-@keyframes artist-p-animation {
+@keyframes park-p-animation {
     0% {
         opacity: 0;
         height: 0;
@@ -349,7 +331,7 @@ article p {
     }
 }
 
-/*CATALOGUE*/
+/* CATALOGUE */
 
 .catalogue-section {
     display: grid;
@@ -362,10 +344,10 @@ article p {
     -moz-box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     text-align: center;
-    /* display: flex;
+    display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
 .catalogue-article img {
@@ -374,41 +356,29 @@ article p {
 
 .catalogue-article h2 {
     color: #57B3D5;
-    /* opacity: 0; */
     margin-top: 25%;
-    /* height: 0; */
 }
 
-.catalogue-h2-animation{
+.catalogue-h2-animation {
     animation-name: catalogue-h2-animation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     color: #57B3D5;
-    /* opacity: 0; */
     margin-top: 25%;
-    /* height: 0; */
 }
 
-@keyframes catalogue-h2-animation{
+@keyframes catalogue-h2-animation {
     0% {
-        /* opacity: 0; */
         margin-top: 25%;
-        /* height: 0; */
     }
     40% {
-        /* opacity: 1; */
         margin-top: 25%;
-        /* height: 0; */
     }
     70% {
-        /* opacity: 1; */
         margin-top: 10%;
-        /* height: auto; */
     }
     100% {
-        /* opacity: 1; */
         margin-top: 10%;
-        /* height: auto; */
     }
 }
 
@@ -419,7 +389,7 @@ article p {
     height: 0;
 }
 
-.catalogue-p-animation{
+.catalogue-p-animation {
     animation-name: catalogue-p-animation;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -450,8 +420,6 @@ article p {
     color: #57B3D5;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    width: 30%;
-    margin-left: 35%;
 }
 
 .catalogue-section a {
@@ -460,7 +428,7 @@ article p {
     opacity: 0;
 }
 
-.catalogue-button-animation{
+.catalogue-button-animation {
     text-decoration: none;
     height: 0;
     opacity: 0;
@@ -468,6 +436,7 @@ article p {
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
+
 @keyframes catalogue-button-animation {
     0% {
         opacity: 0;
@@ -482,21 +451,20 @@ article p {
         height: auto;
     }
 }
- 
+
 .catalogue-button:hover {
     background-color: #57B3D5;
     color: #ffffff;
     cursor: pointer;
 }
 
-/*--------CONTACT-------*/
+/* CONTACT */
 
 .contact-section {
     background-color: #E5E5E5;
     height: 400px;
     margin: 20px 0;
 }
-
 
 .contact-section h2 {
     color: #565656;
@@ -517,7 +485,7 @@ article p {
     opacity: 0;
 }
 
-.contact-element-1-animation{
+.contact-element-1-animation {
     display: flex;
     align-items: center;
     margin: 1% 0;
@@ -526,7 +494,8 @@ article p {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-.contact-element-2-animation{
+
+.contact-element-2-animation {
     display: flex;
     align-items: center;
     margin: 1% 0;
@@ -535,7 +504,8 @@ article p {
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-.contact-element-3-animation{
+
+.contact-element-3-animation {
     display: flex;
     align-items: center;
     margin: 1% 0;
@@ -545,21 +515,24 @@ article p {
     animation-fill-mode: forwards;
 }
 
-@keyframes contact-animation{
-    0%{
+@keyframes contact-animation {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
-.contact-element-1-animation img, .contact-element-2-animation img,.contact-element-3-animation img {
+
+.contact-element-1-animation img, .contact-element-2-animation img, .contact-element-3-animation img {
     width: 3%;
 }
+
 .contact-element p {
     margin-left: 1%;
 }
-.contact-element-1-animation p, .contact-element-2-animation p,.contact-element-3-animation p {
+
+.contact-element-1-animation p, .contact-element-2-animation p, .contact-element-3-animation p {
     margin-left: 1%;
 }
 
