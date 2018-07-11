@@ -145,9 +145,9 @@ article p {
 .article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/photo_3.jpg');
+    background-image: url('../img/photo_10.jpg');
     background-size: cover;
-    background-position: left;
+    background-position: center;
 }
 
 .article-4 {
@@ -179,9 +179,9 @@ article p {
 .article-5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/photo_8.jpg');
+    background-image: url('../img/photo_3.jpg');
     background-size: cover;
-    background-position-x: -40px;
+    background-position: right;
 }
 
 .article-6 {
