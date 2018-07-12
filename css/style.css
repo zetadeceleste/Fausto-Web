@@ -34,16 +34,15 @@ header img {
     font-weight: 500;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
+    color: rgb(49, 49, 49);
 }
 
 .nav-element:hover {
     font-weight: 700;
+    cursor: pointer;
 }
 
-nav a, nav a:visited {
-    text-decoration: none;
-    color: rgb(49, 49, 49);
-}
+
 
 /* ARTIST SECTION */
 
