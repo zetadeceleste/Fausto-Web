@@ -26,6 +26,11 @@ let artwork1 = document.getElementById("artwork-1");
 let artwork2 = document.getElementById("artwork-2");
 let artwork3 = document.getElementById("artwork-3");
 let artwork4 = document.getElementById("artwork-4");
+let footerLink1 = document.getElementById("footer-link-1");
+let footerLink2 = document.getElementById("footer-link-2");
+let footerLink3 = document.getElementById("footer-link-3");
+let footerLink4 = document.getElementById("footer-link-4");
+
 
 //Localización de los elementos
 let coordsArticle4P = article4P.getBoundingClientRect().top;
@@ -39,37 +44,51 @@ let coordsCatalogueSection = catalogueSection.getBoundingClientRect().top;
 let coordsContactSection = contactSection.getBoundingClientRect().top;
 
 //Smooth scroll
-navElement1.addEventListener("click", function () {
+navElement1.addEventListener("click", linkArtistSection);
+footerLink1.addEventListener("click", linkArtistSection);
+
+function linkArtistSection() {
     window.scroll({
         top: coordsArtistSection - 10,
         left: 0,
         behavior: 'smooth'
     });
-});
+}
 
-navElement2.addEventListener("click", function () {
+navElement2.addEventListener("click", linkParkSection);
+footerLink2.addEventListener("click", linkParkSection);
+
+
+function linkParkSection() {
     window.scroll({
         top: coordsParkSection - 10,
         left: 0,
         behavior: 'smooth'
     });
-});
+}
 
-navElement3.addEventListener("click", function () {
+navElement3.addEventListener("click", linkCatalogueSection);
+footerLink3.addEventListener("click", linkCatalogueSection);
+
+function linkCatalogueSection() {
     window.scroll({
         top: coordsCatalogueSection - 10,
         left: 0,
         behavior: 'smooth'
     });
-});
+}
 
-navElement4.addEventListener("click", function () {
+navElement4.addEventListener("click", linkContactSection);
+footerLink4.addEventListener("click", linkContactSection);
+
+
+function linkContactSection() {
     window.scroll({
         top: coordsContactSection - 10,
         left: 0,
         behavior: 'smooth'
     });
-});
+}
 
 //Función de animación
 

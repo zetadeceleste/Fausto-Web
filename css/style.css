@@ -39,8 +39,9 @@ header img {
 }
 
 .nav-element:hover {
-    font-weight: 700;
+    /* font-weight: 700; */
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .sections-container {
@@ -492,7 +493,7 @@ article p {
 /* FOOTER */
 
 .footer-up {
-    background-color: brown;
+    background-color: rgb(130,130,130);
     display: flex;
     flex-flow: row-reverse;
     color: #ffffff;
@@ -517,6 +518,12 @@ article p {
     margin: 5px 15px 0;
 }
 
+.footer-nav-element:hover{
+    cursor: pointer;
+    /* font-weight: 700; */
+    transform: scale(1.05);
+}
+
 .footer-pomelo img {
     width: 170px;
     padding: 10px 0px;
@@ -524,7 +531,7 @@ article p {
 
 .credit-icons {
     text-align: center;
-    background-color: rgb(161, 31, 31);
+    background-color: rgb(130,130,130);
     color: #ffffff;
     padding: 2px;
 }
@@ -533,6 +540,10 @@ article p {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
+}
+
+hr{
+    color: white;
 }
 
 /* ARROW */
