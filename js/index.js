@@ -15,6 +15,14 @@ let article2P = document.getElementById("article-2-p");
 let contactElement1 = document.getElementById("contact-element1");
 let contactElement2 = document.getElementById("contact-element2");
 let contactElement3 = document.getElementById("contact-element3");
+let navElement1 = document.getElementById("nav-element-1");
+let navElement2 = document.getElementById("nav-element-2");
+let navElement3 = document.getElementById("nav-element-3");
+let navElement4 = document.getElementById("nav-element-4");
+let artistSection = document.getElementById("artist-section");
+let parkSection = document.getElementById("park-section");
+let catalogueSection = document.getElementById("catalogue-section");
+let contactSection = document.getElementById("contact-section");
 
 //Localización de los elementos
 let coordsArticle4P = article4P.getBoundingClientRect().top;
@@ -22,6 +30,45 @@ let coordsArticle6P = article6P.getBoundingClientRect().top;
 let coordsParkH2 = parkH2.getBoundingClientRect().top;
 let coordsCatalogueH2 = catalogueH2.getBoundingClientRect().top;
 let coordsContactElement = contactElement1.getBoundingClientRect().top;
+let coordsArtistSection = artistSection.getBoundingClientRect().top;
+let coordsParkSection = parkSection.getBoundingClientRect().top;
+let coordsCatalogueSection = catalogueSection.getBoundingClientRect().top;
+let coordsContactSection = contactSection.getBoundingClientRect().top;
+
+
+//Smooth scroll
+navElement1.addEventListener("click", function(){
+    window.scroll( {
+        top: coordsArtistSection - 10, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+});
+
+navElement2.addEventListener("click", function(){
+    window.scroll( {
+        top: coordsParkSection - 10, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+});
+
+navElement3.addEventListener("click", function(){
+    window.scroll( {
+        top: coordsCatalogueSection - 10, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+});
+
+navElement4.addEventListener("click", function(){
+    window.scroll( {
+        top: coordsContactSection - 10, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+});
+
 
 //Función de animación
 
