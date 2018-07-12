@@ -520,7 +520,6 @@ article p {
 
 .footer-nav-element:hover{
     cursor: pointer;
-    /* font-weight: 700; */
     transform: scale(1.05);
 }
 
