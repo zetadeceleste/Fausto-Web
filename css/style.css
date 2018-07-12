@@ -344,19 +344,19 @@ article p {
 #artwork-1{
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    background-image: url(../img/obra3.jpeg);
+    background-image: url(../img/obraC.jpeg);
     background-size: cover;
 }
 #artwork-2{
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;  
-    background-image: url(../img/obra1.jpeg);
+    background-image: url(../img/obraA.jpeg);
     background-size: cover;  
 }
 #artwork-3{
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    background-image: url(../img/obra2.jpg);
+    background-image: url(../img/obraB.jpg);
     background-size: cover;
     
 }
@@ -370,25 +370,8 @@ article p {
 
 
 
-.artwork {
-    opacity: 0;
-}
 
-.artwork-animation {
-    opacity: 0;
-    animation-name: artwork-animation;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
 
-@keyframes artwork-animation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 .catalogue-info {
     text-align: center;
@@ -421,6 +404,23 @@ article p {
     color: #57B3D5;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    opacity: 0;
+}
+
+.catalogue-button-animation {
+    opacity: 0;
+    animation-name: button-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .catalogue-section a {
