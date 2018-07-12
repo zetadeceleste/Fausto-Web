@@ -27,10 +27,11 @@ header img {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 20px 0px 50px;
 }
 
 .nav-element {
-    margin: 2% 1% 3%;
+    margin: 0 20px;
     font-weight: 500;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
@@ -385,8 +386,8 @@ article p {
 
 .contact-section {
     background-color: #E5E5E5;
-    height: 250px;
-    margin: 20px 0;
+    height: 260px;
+    margin: 20px 0 50px;
 }
 
 .contact-section h2 {
@@ -398,20 +399,20 @@ article p {
 }
 
 .contact-element img {
-    width: 3%;
+    width: 25px;
 }
 
 .contact-element {
     display: flex;
     align-items: center;
-    margin: 1% 0;
+    margin: 15px 5px;
     opacity: 0;
 }
 
 .contact-element-1-animation {
     display: flex;
     align-items: center;
-    margin: 1% 0;
+    margin: 15px 5px;
     opacity: 0;
     animation-name: contact-animation;
     animation-duration: 1s;
@@ -421,7 +422,7 @@ article p {
 .contact-element-2-animation {
     display: flex;
     align-items: center;
-    margin: 1% 0;
+    margin: 15px 5px;
     opacity: 0;
     animation-name: contact-animation;
     animation-duration: 2s;
@@ -431,7 +432,7 @@ article p {
 .contact-element-3-animation {
     display: flex;
     align-items: center;
-    margin: 1% 0;
+    margin: 15px 5px;
     opacity: 0;
     animation-name: contact-animation;
     animation-duration: 3s;
@@ -462,7 +463,7 @@ article p {
 /* FOOTER */
 
 .footer-up {
-    background-color: #1e1f29;
+    background-color: brown;
     display: flex;
     flex-flow: row-reverse;
     color: #ffffff;
@@ -473,14 +474,28 @@ article p {
     padding: 2%;
 }
 
+.footer-nav {
+    display: initial;
+    list-style: none;
+    flex-flow: column;
+}
+
+.footer-nav-element {
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 5px 15px 0;
+}
+
 .footer-pomelo img {
-    width: 150px;
+    width: 170px;
     padding: 10px 0px;
 }
 
 .credit-icons {
     text-align: center;
-    background-color: #0e0d0d;
+    background-color: rgb(161, 31, 31);
     color: #ffffff;
     padding: 2px;
 }
@@ -488,5 +503,5 @@ article p {
 .credit-icons a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
 }
