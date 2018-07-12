@@ -152,7 +152,8 @@ article p {
 .article-4 {
     grid-column: 2/ span 1;
     grid-row: 2/ span 1;
-    background-color: rgb(235, 235, 235);;
+    background-color: rgb(235, 235, 235);
+    ;
 }
 
 .article-4 p {
@@ -220,7 +221,8 @@ article p {
 .article-8 {
     grid-column: 3/ span 1;
     grid-row: 3/ span 1;
-    background-color: rgb(210, 210, 210);;
+    background-color: rgb(210, 210, 210);
+    ;
 }
 
 .article-8 p {
@@ -245,8 +247,6 @@ article p {
         opacity: 1;
     }
 }
-
-
 
 /* PARK OF ARTS */
 
@@ -362,14 +362,10 @@ article p {
     margin-top: 10%;
 }
 
-
-
 .catalogue-article p {
     color: #595959;
     margin: 0 20px 20px;
 }
-
-
 
 .catalogue-button {
     border: 1px solid #57B3D5;
@@ -383,8 +379,6 @@ article p {
     text-decoration: none;
 }
 
-
-
 .catalogue-button:hover {
     background-color: #57B3D5;
     color: #ffffff;
@@ -395,7 +389,7 @@ article p {
 
 .contact-section {
     background-color: #E5E5E5;
-    height: 400px;
+    height: 250px;
     margin: 20px 0;
 }
 
@@ -472,7 +466,7 @@ article p {
 /* FOOTER */
 
 .footer-up {
-    background-color: #1c1e37;
+    background-color: #1e1f29;
     display: flex;
     flex-flow: row-reverse;
     color: #ffffff;
@@ -490,7 +484,7 @@ article p {
 
 .credit-icons {
     text-align: center;
-    background-color: #000000;
+    background-color: #0e0d0d;
     color: #ffffff;
     padding: 2px;
 }
