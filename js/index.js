@@ -22,6 +22,10 @@ let artistSection = document.getElementById("artist-section");
 let parkSection = document.getElementById("park-section");
 let catalogueSection = document.getElementById("catalogue-section");
 let contactSection = document.getElementById("contact-section");
+let artwork1 = document.getElementById("artwork-1");
+let artwork2 = document.getElementById("artwork-2");
+let artwork3 = document.getElementById("artwork-3");
+let artwork4 = document.getElementById("artwork-4");
 
 //Localización de los elementos
 let coordsArticle4P = article4P.getBoundingClientRect().top;
@@ -88,10 +92,52 @@ function article6And8Animation() {
         parkH2.className = "park-h2-animation";
         parkP.className = "park-p-animation";
     }
+    if (document.body.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20) || document.documentElement.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20)) {
+        artwork1.classList.add("artwork-animation");
+        setTimeout(function () {
+            artwork2.classList.add("artwork-animation");
+        }, 300);
+        setTimeout(function () {
+            artwork3.classList.add("artwork-animation");
+        }, 600);
+        setTimeout(function () {
+            artwork4.classList.add("artwork-animation");
+        }, 900);
+    }
+
     if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.20) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)) {
         contactElement1.className = "contact-element-1-animation";
         contactElement2.className = "contact-element-2-animation";
         contactElement3.className = "contact-element-3-animation";
     }
+
+    //Arrow animation
+
+    if (document.body.scrollTop > coordsArtistSection || document.documentElement.scrollTop > coordsArtistSection) {
+        arrow.className = "arrow-animation";
+    }
+    if (window.pageYOffset == 0) {
+        if (arrow.className == "arrow-animation") {
+            arrow.className = "arrow-animation-back";
+        }
+    }
 }
+
+//Arrow
+
+let arrow = document.getElementById("arrow");
+
+arrow.addEventListener("click", function () {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
+});
+
+let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+
+
+
 
