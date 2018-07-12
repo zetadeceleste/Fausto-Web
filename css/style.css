@@ -334,19 +334,50 @@ article p {
 
 .catalogue-section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.catalogue-artwork{
+    grid-column: 2 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .catalogue-article {
     -webkit-box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     -moz-box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
     box-shadow: 0px 0px 21px -11px rgba(150, 150, 150, 1);
+}
+
+.artwork{
+    opacity: 0;
+}
+
+.artwork-animation{
+    opacity: 0;
+    animation-name: artwork-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes artwork-animation{
+    0%{
+        opacity: 0;        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.catalogue-info{
     text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .catalogue-article img {
