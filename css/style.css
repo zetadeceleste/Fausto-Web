@@ -490,3 +490,59 @@ article p {
     color: #ffffff;
     font-weight: 700;
 }
+
+/*--------------ARROW----------*/
+.arrow{
+    width: 3%;
+    position: fixed;
+    top: 5%;
+    left: 94.5%;
+    opacity: 0;
+}
+
+
+.arrow-animation{
+    width: 3%;
+    position: fixed;
+    top: 5%;
+    left: 94.5%;
+    opacity:0;
+    animation-name: arrow-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrow-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.arrow-animation-back{
+    width: 3%;
+    position: fixed;
+    top: 5%;
+    left: 94.5%;
+    opacity:1;
+    animation-name: arrow-animation-back;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrow-animation-back{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+.arrow-animation:hover, .arrow-animation-back:hover{
+    cursor:pointer;
+}

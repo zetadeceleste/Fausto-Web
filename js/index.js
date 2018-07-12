@@ -96,5 +96,32 @@ function article6And8Animation() {
         contactElement2.className = "contact-element-2-animation";
         contactElement3.className = "contact-element-3-animation";
     }
+    //Arrow animation
+    if (document.body.scrollTop > coordsArtistSection || document.documentElement.scrollTop > coordsArtistSection){
+        arrow.className = "arrow-animation";
+    }
+    if (window.pageYOffset == 0 ){
+        if (arrow.className == "arrow-animation"){
+            arrow.className = "arrow-animation-back";
+        }
+    }
 }
+
+//Arrow
+
+let arrow = document.getElementById("arrow");
+
+arrow.addEventListener("click", function(){
+    window.scroll( {
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+        
+});
+
+let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+
+ 
+
 
