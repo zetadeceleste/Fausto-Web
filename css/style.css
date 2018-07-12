@@ -39,7 +39,6 @@ header img {
 }
 
 .nav-element:hover {
-    /* font-weight: 700; */
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -56,7 +55,7 @@ header img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
 }
 
 article:nth-child(2) {
@@ -252,8 +251,8 @@ article p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 400px;
-    grid-gap: 20px;
-    margin: 20px 0px;
+    /* grid-gap: 20px; */
+    margin: 0px 0px 20px 0px;
 }
 
 .park-img {
@@ -337,7 +336,7 @@ article p {
 .catalogue-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
 }
 
 .catalogue-artwork {
@@ -384,12 +383,12 @@ article p {
     width: 100%;
 }
 
-.catalogue-article h2 {
+.catalogue-info h2 {
     color: #57B3D5;
     margin-top: 10%;
 }
 
-.catalogue-article p {
+.catalogue-info p {
     color: #595959;
     margin: 0 20px 20px;
 }
