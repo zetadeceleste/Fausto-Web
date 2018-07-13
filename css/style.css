@@ -408,6 +408,11 @@ article p {
 }
 
 .catalogue-button-animation {
+    border: 1px solid #57B3D5;
+    padding: 10px;
+    color: #57B3D5;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     opacity: 0;
     animation-name: button-animation;
     animation-duration: 2s;
@@ -427,10 +432,9 @@ article p {
     text-decoration: none;
 }
 
-.catalogue-button:hover {
+.catalogue-section a:hover {
     background-color: #57B3D5;
     color: #ffffff;
-    cursor: pointer;
 }
 
 /* CONTACT */

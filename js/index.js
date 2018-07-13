@@ -108,7 +108,7 @@ function article6And8Animation() {
         parkP.className = "park-p-animation";
     }
     if (document.body.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20) || document.documentElement.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20)) {
-        catalogueButton.classList.add("catalogue-button-animation");
+        catalogueButton.className = "catalogue-button-animation";
     }
 
     if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.20) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)) {
