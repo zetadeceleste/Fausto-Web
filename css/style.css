@@ -500,7 +500,7 @@ article p {
 }
 
 .contact-element-1-animation img, .contact-element-2-animation img, .contact-element-3-animation img {
-    width: 3%;
+    width: 2%;
 }
 
 .contact-element p {
@@ -544,8 +544,12 @@ article p {
     transform: scale(1.05);
 }
 
+.footer-pomelo{
+    width: 25%;
+}
+
 .footer-pomelo img {
-    width: 170px;
+    width: 70%;
     padding: 10px 0px;
 }
 
@@ -553,7 +557,7 @@ article p {
     text-align: center;
     background-color: rgb(130,130,130);
     color: #ffffff;
-    padding: 2px;
+    padding: 0 10%;
 }
 
 .credit-icons a {
@@ -646,6 +650,7 @@ hr{
     .article-1{
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
+        background-position: left;
     }
     .article-2{
         grid-column: 1 / span 1;
@@ -697,21 +702,6 @@ hr{
         animation-fill-mode: forwards;
         margin-top: 50%;
     }
-    
-    @keyframes park-h2-animation {
-        0% {
-            margin-top: 50%;
-        }
-        40% {
-            margin-top: 50%;
-        }
-        70% {
-            margin-top: 10%;
-        }
-        100% {
-            margin-top: 10%;
-        }
-    }
 
     .park-bio p{
         padding: 0 5%;
@@ -761,8 +751,10 @@ hr{
     .footer-up{
         flex-flow: row;
         justify-content: center;
-
-
+    }
+    .footer-pomelo{
+        width: 80%;
+        text-align: center;
     }
 
     footer hr{
@@ -770,6 +762,82 @@ hr{
     }
     footer p{
         font-size: 0.8em;
+    }
+    @keyframes article-2-title {
+        0% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+    @keyframes article-2-p {
+        0% {
+            opacity: 1;
+            height: auto;
+        }
+        100% {
+            opacity: 1;
+            height: auto;
+        }
+    }
+    @keyframes article-4-animation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes article-6-animation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes article-8-animation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes park-h2-animation {
+        0% {
+            margin-top: 10%;
+        }
+        100% {
+            margin-top: 10%;
+        }
+    }
+    @keyframes park-p-animation {
+        0% {
+            opacity: 1;
+            height: auto;
+        }
+        100% {
+            opacity: 1;
+            height: auto;
+        }
+    }
+    @keyframes button-animation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes contact-animation {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
 
