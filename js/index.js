@@ -22,10 +22,6 @@ let artistSection = document.getElementById("artist-section");
 let parkSection = document.getElementById("park-section");
 let catalogueSection = document.getElementById("catalogue-section");
 let contactSection = document.getElementById("contact-section");
-let artwork1 = document.getElementById("artwork-1");
-let artwork2 = document.getElementById("artwork-2");
-let artwork3 = document.getElementById("artwork-3");
-let artwork4 = document.getElementById("artwork-4");
 let footerLink1 = document.getElementById("footer-link-1");
 let footerLink2 = document.getElementById("footer-link-2");
 let footerLink3 = document.getElementById("footer-link-3");
@@ -112,16 +108,7 @@ function article6And8Animation() {
         parkP.className = "park-p-animation";
     }
     if (document.body.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20) || document.documentElement.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20)) {
-        artwork1.classList.add("artwork-animation");
-        setTimeout(function () {
-            artwork2.classList.add("artwork-animation");
-        }, 300);
-        setTimeout(function () {
-            artwork3.classList.add("artwork-animation");
-        }, 600);
-        setTimeout(function () {
-            artwork4.classList.add("artwork-animation");
-        }, 900);
+        catalogueButton.className = "catalogue-button-animation";
     }
 
     if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.20) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)) {
