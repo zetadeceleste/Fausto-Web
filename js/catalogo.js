@@ -1,16 +1,16 @@
 let articles = [
-    {
-        name : "Obra 1",
-        img : "img/obra1.jpeg",
-        precio: "$500",
-        tamanio: "30x12"
-    },
-    { 
-        name : "Obra 2",
-        img : "img/obra2.jpg",
-        precio: "$500",
-        tamanio: "30x12"
-    }
+    // {
+    //     name : "Obra 1",
+    //     img : "img/obra1.jpeg",
+    //     precio: "$500",
+    //     tamanio: "30x12"
+    // },
+    // { 
+    //     name : "Obra 2",
+    //     img : "img/obra2.jpg",
+    //     precio: "$500",
+    //     tamanio: "30x12"
+    // }
 ];
 
 let fondo = document.getElementById("fondo");
