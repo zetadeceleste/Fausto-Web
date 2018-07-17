@@ -512,29 +512,28 @@ article p {
 
 /* FOOTER */
 
-.footer-up {
+.footer {
     background-color: rgb(130, 130, 130);
     display: flex;
     flex-flow: row-reverse;
     color: #ffffff;
     padding: 1% 8%;
-}
-
-.footer-pomelo {
-    padding: 2%;
+    margin-top: 50px;
 }
 
 .footer-nav {
-    display: initial;
+    width: 400px;
+}
+
+.footer-nav ul {
     list-style: none;
-    flex-flow: column;
 }
 
 .footer-nav-element {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 1em;
-    font-family: 'Lato', sans-serif;
-    color: #ffffff;
     margin: 5px 15px 0;
 }
 
@@ -550,26 +549,28 @@ article p {
 }
 
 .footer-pomelo {
-    width: 25%;
+    width: 420px;
+    padding-left: 2%;
+    padding-top: 2%;
 }
 
 .footer-pomelo img {
-    width: 60%;
+    width: 80%;
     padding: 10px 0px;
 }
 
-.credit-icons {
-    text-align: center;
+.footer-credit {
+    width: 100%;
     background-color: rgb(130, 130, 130);
-    color: #ffffff;
-    padding: 0 10%;
+    display: flex;
+    flex-flow: column-reverse;
 }
 
-.credit-icons p {
+.footer-credit p {
     font-size: 0.9em;
 }
 
-.credit-icons a {
+.footer-credit a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
@@ -634,6 +635,7 @@ hr {
 }
 
 /*-----------------------------------------------------------------------------------*/
+
 /*-----------------------------MEDIA QUERY-------------------------------------------*/
 
 @media(max-width: 768px) {
@@ -737,16 +739,26 @@ hr {
     .contact-section h2 {
         margin-top: 10%;
     }
+    .footer {
+        margin-top: 0px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .footer-nav {
         display: none;
     }
-    .footer-up {
-        flex-flow: row;
-        justify-content: center;
-    }
     .footer-pomelo {
-        width: 80%;
-        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+    }
+    .footer-pomelo img {
+        width: 50%;
+    }
+    .footer-credit {
+        padding-top: 5%;
     }
     footer hr {
         display: none;
