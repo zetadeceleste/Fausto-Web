@@ -142,7 +142,7 @@ article p {
 .article-3 {
     grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-image: url('../img/photo_11.jpg');
+    background-image: url('../img/photo_2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +211,7 @@ article p {
 .article-7 {
     grid-column: 2/ span 1;
     grid-row: 3/ span 1;
-    background-image: url('../img/photo_5.jpg');
+    background-image: url('../img/photo_4.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -256,10 +256,9 @@ article p {
 
 .park-img {
     grid-column: 1 / span 1;
-    background-image: url('../img/photo_12.jpg');
-    background-position-x: -220px;
-    height: 400px;
-    background-position-y: -120px;
+    background-image: url(../img/photo_5.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 .park-bio {
@@ -637,7 +636,6 @@ hr {
 }
 
 /*-----------------------------------------------------------------------------------*/
-
 /*-----------------------------MEDIA QUERY-------------------------------------------*/
 
 @media(max-width: 768px) {
