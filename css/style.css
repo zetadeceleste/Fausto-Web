@@ -63,16 +63,13 @@ header img {
     grid-template-rows: 400px 400px 400px;
 }
 
-article:nth-child(2) {
-    display: block;
-}
-
 article {
-    text-align: center;
-    padding: 20%;
     display: flex;
+    padding: 20%;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 
 article p {
@@ -346,7 +343,6 @@ article p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 400px;
-    /* grid-gap: 20px; */
 }
 
 #artwork-1 {
