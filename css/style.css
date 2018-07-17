@@ -111,7 +111,7 @@ article p {
     }
 }
 
-.article-2 p {
+#article-2-p {
     opacity: 0;
     height: 0;
 }
@@ -305,8 +305,10 @@ article p {
     }
 }
 
-#park-bio p {
-    padding: 0 5%;
+#park-p {
+    padding: 0 15%;
+    opacity: 0;
+    height:0;
 }
 
 .park-p-animation {
@@ -695,11 +697,12 @@ hr {
     .park-bio {
         grid-column: 1 / span 3;
         grid-row: 1 / span 1;
+        height: 500px;
     }
     .park-bio h2 {
         width: 95%;
-        margin-left: 5%;
-        margin-top: 50%;
+        margin-left: 2.5%;
+        margin-top: 10%;
     }
     .park-h2-animation {
         animation-name: park-h2-animation;
