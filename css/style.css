@@ -307,6 +307,8 @@ article p {
 
 #park-p {
     padding: 0 5%;
+    opacity: 0;
+    height:0;
 }
 
 .park-p-animation {
@@ -693,6 +695,7 @@ hr {
     .park-bio {
         grid-column: 1 / span 3;
         grid-row: 1 / span 1;
+        height: 500px;
     }
     .park-bio h2 {
         width: 95%;
