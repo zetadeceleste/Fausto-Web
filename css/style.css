@@ -91,7 +91,7 @@ article p {
 
 .article-2 h2 {
     color: rgb(134, 210, 238);
-    margin-top: 35%;
+    margin-top: 15%;
 }
 
 .article-h2-animation {
@@ -99,12 +99,12 @@ article p {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     color: #57B3D5;
-    margin-top: 35%;
+    margin-top: 15%;
 }
 
 @keyframes article-2-title {
     0% {
-        margin-top: 35%;
+        margin-top: 15%;
     }
     100% {
         margin-top: 0;
@@ -709,7 +709,7 @@ hr {
         animation-fill-mode: forwards;
         margin-top: 50%;
     }
-    .park-bio p {
+    #park-p {
         padding: 0 5%;
     }
     .park-p-animation {
