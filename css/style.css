@@ -40,8 +40,7 @@ header img {
 
 .nav-element a {
     text-decoration: none;
-    border-bottom: 1px solid rgb(49, 49, 49);
-    color: rgb(49, 49, 49);
+    color: rgb(0, 179, 250);
 }
 
 .nav-element:hover {
