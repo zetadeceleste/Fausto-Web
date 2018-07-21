@@ -756,6 +756,7 @@ hr {
         align-items: center;
         display: flex;
         flex-flow: column;
+        width: 90%;
     }
     .footer-pomelo img {
         width: 50%;
@@ -844,5 +845,9 @@ hr {
         100% {
             opacity: 1;
         }
+    }
+
+    .arrow{
+        display: none;
     }
 }
