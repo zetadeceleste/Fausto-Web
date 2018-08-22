@@ -8,7 +8,7 @@ let parkH2 = document.getElementById("park-h2");
 let parkP = document.getElementById("park-p");
 let catalogueH2 = document.getElementById("catalogue-h2");
 let catalogueP = document.getElementById("catalogue-p");
-let catalogueButton = document.getElementById("catalogue-button");
+// let catalogueButton = document.getElementById("catalogue-button");
 let article2H2 = document.getElementById("article-2-h2");
 let article2P = document.getElementById("article-2-p");
 let contactElement1 = document.getElementById("contact-element1");
@@ -107,11 +107,11 @@ function article6And8Animation() {
         parkH2.className = "park-h2-animation";
         parkP.className = "park-p-animation";
     }
-    if (document.body.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20) || document.documentElement.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20)) {
-        catalogueButton.className = "catalogue-button-animation";
-    }
+    // if (document.body.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20) || document.documentElement.scrollTop > coordsCatalogueSection - (coordsCatalogueSection * 0.20)) {
+    //     catalogueButton.className = "catalogue-button-animation";
+    // }
 
-    if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.20) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)) {
+    if (document.body.scrollTop > coordsContactElement - (coordsContactElement * 0.25) || document.documentElement.scrollTop > coordsContactElement - (coordsContactElement * 0.20)) {
         contactElement1.className = "contact-element-1-animation";
         contactElement2.className = "contact-element-2-animation";
         contactElement3.className = "contact-element-3-animation";
